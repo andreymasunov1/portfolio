@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>What we've learnt already</title>
+    </head>
+    <body>
+        <style>
+            body {
+                background-color: lightgreen;
+            }
+
+            h1, p {
+                color: black;
+            }
+
+            h2, h3, h4 {
+                color: black;
+            }
+
+            @keyframes rotation {
+                0% {rotate: 0deg;}
+                50% {rotate: 180deg;}
+                100% {rotate: 360deg;}
+            }
+
+            @keyframes move {
+                0%, 100% { transform: translateX(0px); }
+                50% { transform: translateX(1500px); }
+            }
+
+            #ball {
+                animation: rotation 10s linear infinite;
+            }
+
+            #ant {
+                animation: move 15s linear infinite;
+            }
+
+            #centered {
+                text-align: center;
+            }
+        </style>
+        <main>
+            <h1>What we've learnt already</h1>
+            <ol>
+                <li>
+                    We've learnt some terminal <a href="https://www.man7.org/linux/man-pages/man1/bash.1.html">commands</a>
+                </li>
+                <li>
+                    We've learnt some git <a href="https://education.github.com/git-cheat-sheet-education.pdf">commands</a> which allow us to create repositories, make changes, handle branches, make commits and pushes.</li>
+                <li>We've learned basics of <a href="https://www.w3schools.com/html/">HTML</a> and <a href="https://www.w3schools.com/css/">CSS</a></li>
+            </ol>
+
+            <h3>Some animation</h3>
+            <div id="centered">
+                <h4>Rotation</h4>
+                <div id="ball">⚽</div>
+                <h4>Moving</h4>
+            </div>
+            <div id="ant">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Coccinella-septempunctata-15-fws.jpg/220px-Coccinella-septempunctata-15-fws.jpg">
+            </div>
+            
+            <br>
+            <a href="future.html">Follow up...</a>
+        </main>
+    </body>
+</html>

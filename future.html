@@ -1,0 +1,51 @@
+<html>
+    <header>
+        <title>What we will cover soon</title>
+    </header>
+    <body>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                background-color: lightgreen;
+            }
+
+            h1, p {
+                color: black;
+            }
+
+            h2, h3, h4 {
+                color: black;
+            }
+
+            @keyframes rotation {
+                0% {rotate: 0deg;}
+                50% {rotate: 180deg;}
+                100% {rotate: 360deg;}
+            }
+
+            @keyframes move {
+                0%, 100% { transform: translateX(0px); }
+                50% { transform: translateX(1500px); }
+            }
+
+            #ball {
+                animation: rotation 10s linear infinite;
+            }
+
+            #ant {
+                animation: move 15s linear infinite;
+            }
+
+            #centered {
+                text-align: center;
+            }
+        </style>
+        <main>
+            <div id="ball">
+                <div id="centered"><h1>JAVA!</h1></div>
+            </div>
+            <a href="index.html">Main page</a>
+        </main>
+    </body>
+</html>
